@@ -1,16 +1,15 @@
 // Realizing categories tabs
 
 // Getting created new tabs elements
-console.log("hi")
-const tabs = document.querySelectorAll(".category_tab");
-const item = document.querySelectorAll(".category_item");
 
+const tabs = document.querySelectorAll(".category_tab");
+const items = document.querySelectorAll(".category_item");
 function toggleShow() {
     const target = this;
     const item = target.classList.contains("category_tab")
         ? target
         : target.parentElement;
-    const id = item.dataset.tagId;
+    const id = item.dataset.tabId;
 
     tabs.forEach((tab) => {
         if (tab.dataset.tabId === id) {

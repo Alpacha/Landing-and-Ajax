@@ -660,7 +660,7 @@ height: 350px;
 box-shadow: 3px 3px 20px lightblue;
 }
 .category_tabs .category_active {
-    background-color: grey;
+    background-color: darkcyan;
     color: #fff;
     border: none;
 }
