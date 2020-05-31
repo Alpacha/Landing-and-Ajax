@@ -630,3 +630,49 @@ height: 350px;
         flex-direction: column;
     }
 }  */
+
+/* ----------- TABS ------------- */
+.category {
+    margin-top: 50px;
+}
+.category_tabs {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.category_tab {
+    width: 200px;
+    height: 50px;
+    border: 1px solid black;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight:700;
+    letter-spacing: 2px;
+    text-align: center;
+    line-height: 50px;
+    margin: 0 5px;
+    cursor: pointer;
+    transform: skewX(-25deg);
+
+}
+.category_tab:hover {
+box-shadow: 3px 3px 20px lightblue;
+}
+.category_tabs .category_active {
+    background-color: grey;
+    color: #fff;
+    border: none;
+}
+.category_tab div {
+    transform: skewX(25deg);
+}
+.category_item {
+ opacity: 0;
+ height: 0;
+}
+
+.category_item.category_active {
+    opacity: 1;
+    height: auto;
+}
